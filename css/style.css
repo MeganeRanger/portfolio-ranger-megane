@@ -28,7 +28,7 @@
 }
 
 html {
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: 16px;
 }
 
 body {
@@ -36,7 +36,6 @@ body {
     background: var(--gradient-main);
     min-height: 100vh;
     color: var(--color-brown-dark);
-    overflow-x: hidden;
 }
 
 a {
@@ -59,7 +58,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(1.5rem, 5vw, 3rem);
+    padding: 3rem;
     position: relative;
     overflow: hidden;
 }
@@ -74,7 +73,7 @@ img {
     left: 7%;
     top: 48%;
     font-family: var(--font-sans);
-    font-size: clamp(0.6rem, 2.5vw, 0.875rem);
+    font-size: 0.875rem;
     letter-spacing: 0.4em;
     font-weight: 600;
     color: #000;
@@ -95,7 +94,7 @@ img {
 /* MÉGANE */
 .hero-name .first-name {
     display: block;
-    font-size: clamp(1.8rem, 5.5vw, 4.8rem);
+    font-size: clamp(2.8rem, 5.5vw, 4.8rem);
     font-weight: 500;
     letter-spacing: 0.18em;
     opacity: 0;
@@ -104,7 +103,7 @@ img {
 /* RANGER */
 .hero-name .last-name {
     display: block;
-    font-size: clamp(2.2rem, 6.6vw, 5.8rem);
+    font-size: clamp(3.4rem, 6.6vw, 5.8rem);
     font-weight: 700;
     letter-spacing: 0.14em;
     opacity: 0;
@@ -114,9 +113,8 @@ img {
 .fleur-decoration {
     position: absolute;
     top: 42%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(60px, 20vw, 145px);
+    left: 44%;
+    width: 145px;
     opacity: 0;
     transform-origin: center;
     animation: flowerRotate 1.8s ease-out 0.1s forwards;
@@ -130,18 +128,17 @@ img {
     right: 13%;
     bottom: 20%;
     display: inline-block;
-    padding: clamp(0.5rem, 2vw, 0.65rem) clamp(1.5rem, 4vw, 2.3rem);
+    padding: 0.65rem 2.3rem;
     border: 3px solid #000;
     border-radius: 30px;
     font-family: var(--font-sans);
-    font-size: clamp(0.55rem, 2vw, 0.7rem);
+    font-size: 0.7rem;
     letter-spacing: 0.35em;
     font-weight: 700;
     color: #000;
     opacity: 0;
     animation: buttonReveal 0.9s ease-out 1s forwards;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    white-space: nowrap;
 }
 .btn-projets:hover {
     background: #000;
@@ -153,19 +150,18 @@ img {
    ======================================== */
 
 .header {
-    padding: clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 5vw, 3rem);
+    padding: 2rem 3rem;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(1rem, 5vw, 4rem);
+    gap: 4rem;
 }
 
 .nav a {
     font-family: var(--font-sans);
-    font-size: clamp(0.6rem, 2.5vw, 0.75rem);
+    font-size: 0.75rem;
     letter-spacing: 0.25em;
     font-weight: 400;
     color: var(--color-brown-dark);
@@ -195,13 +191,13 @@ img {
    ======================================== */
 
 .projets-page {
-    padding: clamp(1.5rem, 4vw, 2rem) clamp(1.5rem, 5vw, 3rem) clamp(2rem, 5vw, 4rem);
+    padding: 2rem 3rem 4rem;
 }
 
 .projets-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(1rem, 4vw, 2rem);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -223,8 +219,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(1rem, 3vw, 1.5rem);
-    margin-bottom: clamp(0.5rem, 2vw, 0.75rem);
+    padding: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .projet-image img {
@@ -236,9 +232,9 @@ img {
 .projet-label {
     background: var(--color-brown-dark);
     color: var(--color-cream);
-    padding: clamp(0.5rem, 2vw, 0.625rem) clamp(0.75rem, 2vw, 1rem);
+    padding: 0.625rem 1rem;
     border-radius: 4px;
-    font-size: clamp(0.5rem, 2vw, 0.625rem);
+    font-size: 0.625rem;
     letter-spacing: 0.2em;
     text-align: center;
     font-weight: 500;
@@ -253,18 +249,15 @@ img {
    ======================================== */
 
 .header-detail {
-    padding: clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 5vw, 3rem);
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 3vw, 2rem);
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 2rem;
 }
 
 .back-arrow {
     color: var(--color-brown-dark);
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
 
 .back-arrow:hover {
@@ -273,24 +266,23 @@ img {
 
 .projet-logo {
     flex: 1;
-    min-width: 150px;
     display: flex;
     justify-content: center;
 }
 
 .projet-logo img {
-    max-height: clamp(40px, 8vw, 60px);
+    max-height: 60px;
     width: auto;
 }
 
 .projet-detail {
-    padding: clamp(1.5rem, 4vw, 2rem) clamp(1.5rem, 5vw, 3rem) clamp(2rem, 5vw, 4rem);
+    padding: 0 3rem 4rem;
 }
 
 .galerie-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(1rem, 3vw, 1.5rem);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -304,8 +296,8 @@ img {
 }
 
 .galerie-item.large {
-    grid-row: span 1;
-    aspect-ratio: 4/3;
+    grid-row: span 2;
+    aspect-ratio: auto;
 }
 
 .galerie-item img {
@@ -320,7 +312,7 @@ img {
 
 .apropos-page {
     min-height: auto;
-    padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 3rem) clamp(2rem, 5vw, 4rem);
+    padding: 3rem 3rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -329,19 +321,19 @@ img {
 .apropos-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: clamp(2rem, 5vw, 4rem);
+    gap: 4rem;
     max-width: 1000px;
     width: 100%;
     align-items: center;
-    margin-bottom: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 3rem;
 }
 
 .photo-frame {
     position: relative;
     background: var(--color-beige);
-    padding: clamp(1rem, 3vw, 1.5rem);
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: clamp(4px, 2vw, 8px) clamp(4px, 2vw, 8px) 0 var(--color-brown);
+    box-shadow: 8px 8px 0 var(--color-brown);
 }
 
 .photo-frame img {
@@ -351,23 +343,23 @@ img {
 
 .fleur-overlay {
     position: absolute;
-    top: clamp(-15px, -5vw, -30px);
-    right: clamp(-15px, -5vw, -30px);
-    width: clamp(50px, 15vw, 80px);
+    top: -30px;
+    right: -30px;
+    width: 80px;
 }
 
 .apropos-content h1 {
     font-family: var(--font-serif);
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 1.5rem;
     color: var(--color-brown-dark);
 }
 
 .apropos-content p {
-    font-size: clamp(0.85rem, 2.5vw, 0.9375rem);
+    font-size: 0.9375rem;
     line-height: 1.8;
-    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 1.5rem;
     color: var(--color-brown-dark);
 }
 
@@ -387,7 +379,7 @@ img {
 
 .logiciels-section {
     width: 100%;
-    padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 3rem);
+    padding: 3rem 3rem;
     margin-top: 0;
     text-align: center;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -395,30 +387,30 @@ img {
 
 .logiciels-section h2 {
     font-family: var(--font-serif);
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: 2rem;
     font-weight: 500;
-    margin-bottom: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 2rem;
     color: var(--color-brown-dark);
 }
 
 .logiciels-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .logiciel-card {
     background: transparent;
-    padding: clamp(0.75rem, 2vw, 1rem);
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: none;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(0.5rem, 2vw, 0.75rem);
+    gap: 0.75rem;
     text-align: center;
 }
 
@@ -427,89 +419,87 @@ img {
 }
 
 .logiciel-icon {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: 3rem;
     line-height: 1;
-    height: auto;
-    min-height: clamp(70px, 15vw, 100px);
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .logiciel-icon img {
-    width: clamp(50px, 12vw, 100px);
-    height: clamp(50px, 12vw, 100px);
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 
 .logiciel-card h3 {
     font-family: var(--font-sans);
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--color-brown-dark);
     margin: 0;
-    word-break: break-word;
 }
 
 /* Styles individuels pour chaque logiciel */
 .capcut-icon img {
-    width: clamp(30px, 8vw, 50px);
-    height: clamp(30px, 8vw, 50px);
+    width: 50px;
+    height: 50px;
 }
 
 .davinci-icon img {
-    width: clamp(40px, 10vw, 60px);
-    height: clamp(40px, 10vw, 60px);
+    width: 60px;
+    height: 60px;
 }
 
 .figma-icon img {
-    width: clamp(60px, 12vw, 80px);
-    height: clamp(75px, 15vw, 100px);
+    width: 80px;
+    height: 100px;
 }
 
 .canva-icon img {
-    width: clamp(60px, 12vw, 80px);
-    height: clamp(75px, 15vw, 100px);
+    width: 80px;
+    height: 100px;
 }
 
 .illustrator-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .photoshop-icon img {
-    width: clamp(80px, 18vw, 150px);
-    height: clamp(80px, 18vw, 150px);
+    width: 150px;
+    height: 150px;
 }
 
 .aftereffect-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .maya-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .html-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .css-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .javascript-icon img {
-    width: clamp(70px, 15vw, 100px);
-    height: clamp(70px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
 }
 
 .elevenlabs-icon img {
-    width: clamp(25px, 6vw, 40px);
-    height: clamp(25px, 6vw, 40px);
+    width: 40px;
+    height: 40px;
 }
 
 /* ========================================
@@ -518,7 +508,7 @@ img {
 
 .projets-detailles-page {
     min-height: auto;
-    padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 3rem) clamp(2rem, 5vw, 4rem);
+    padding: 3rem 3rem 4rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -531,17 +521,17 @@ img {
 
 .projets-detailles-container h1 {
     font-family: var(--font-serif);
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 1.5rem;
     color: var(--color-brown-dark);
     text-align: center;
 }
 
 .projets-intro {
-    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 3rem;
     color: var(--color-brown-dark);
     text-align: center;
     max-width: 800px;
@@ -552,16 +542,16 @@ img {
 .projets-liste {
     display: flex;
     flex-direction: column;
-    gap: clamp(2rem, 4vw, 3rem);
+    gap: 3rem;
 }
 
 .projet-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(1.5rem, 4vw, 3rem);
+    grid-template-columns: 350px 1fr;
+    gap: 3rem;
     align-items: start;
     background: var(--color-cream);
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -574,6 +564,7 @@ img {
 .projet-item-image {
     width: 100%;
     aspect-ratio: 3/4;
+    /*background: var(--color-white);*/
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -582,89 +573,47 @@ img {
 }
 
 .projet-item-image img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
 }
 
 .projet-item-content h3 {
     font-family: var(--font-serif);
-    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: clamp(0.75rem, 2vw, 1rem);
+    margin-bottom: 1rem;
     color: var(--color-brown-dark);
 }
 
 .projet-item-content p {
-    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+    font-size: 0.95rem;
     line-height: 1.7;
     color: var(--color-brown-dark);
 }
 
 /* ========================================
-   RESPONSIVE - TABLETTES
+   RESPONSIVE
    ======================================== */
 
 @media (max-width: 1024px) {
     .projets-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .apropos-container {
-        gap: clamp(2rem, 4vw, 3rem);
-    }
-    
-    .projet-item {
-        gap: clamp(1.5rem, 3vw, 2rem);
+        gap: 3rem;
     }
 }
 
-/* ========================================
-   RESPONSIVE - PETITES TABLETTES & GRANDS TÉLÉPHONES
-   ======================================== */
-
 @media (max-width: 768px) {
-    .hero-content {
-        min-height: auto;
-        padding: 2rem 1rem;
-    }
-    
-    .hero-subtitle {
-        position: relative;
-        top: auto;
-        left: auto;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    
-    .hero-name {
-        position: relative;
-        top: auto;
-        left: auto;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    .fleur-decoration {
-        position: relative;
-        top: auto;
-        left: auto;
-        margin-bottom: 2rem;
-    }
-    
-    .btn-projets {
-        position: relative;
-        right: auto;
-        bottom: auto;
-        margin: 0;
-    }
-    
     .nav {
-        gap: clamp(0.5rem, 3vw, 2rem);
+        gap: 2rem;
     }
     
     .projets-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
     
     .galerie-grid {
@@ -679,311 +628,54 @@ img {
     .apropos-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: clamp(1.5rem, 4vw, 2rem);
     }
     
     .apropos-photo {
-        max-width: 100%;
-        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
     
     .projet-item {
         grid-template-columns: 1fr;
-        gap: clamp(1rem, 3vw, 1.5rem);
+        gap: 1.5rem;
     }
     
     .projet-item-image {
-        max-height: 300px;
-    }
-    
-    .header-detail {
-        flex-direction: column;
-    }
-    
-    .projet-logo {
-        min-width: auto;
-        width: 100%;
+        aspect-ratio: 4/3;
     }
 }
 
-/* ========================================
-   RESPONSIVE - TÉLÉPHONES MOYENS
-   ======================================== */
-
-@media (max-width: 640px) {
-    html {
-        font-size: clamp(14px, 1.5vw, 16px);
-    }
-    
+@media (max-width: 480px) {
     .header,
     .header-detail,
     .projets-page,
     .projet-detail,
-    .apropos-page,
-    .projets-detailles-page,
-    .logiciels-section {
-        padding-left: clamp(1rem, 4vw, 1.5rem);
-        padding-right: clamp(1rem, 4vw, 1.5rem);
-    }
-    
-    .hero {
-        padding: clamp(1rem, 4vw, 1.5rem);
+    .apropos-page {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
     
     .nav {
-        flex-direction: row;
-        gap: clamp(0.5rem, 2vw, 1rem);
+        flex-direction: column;
+        gap: 1rem;
         align-items: center;
     }
     
-    .nav a {
-        font-size: clamp(0.55rem, 2.2vw, 0.65rem);
-        letter-spacing: 0.2em;
-    }
-    
     .projets-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: clamp(0.75rem, 3vw, 1rem);
-    }
-    
-    .projet-image {
-        padding: clamp(0.75rem, 2vw, 1rem);
-        margin-bottom: clamp(0.35rem, 1.5vw, 0.5rem);
-    }
-    
-    .projet-label {
-        padding: clamp(0.4rem, 1.5vw, 0.5rem) clamp(0.6rem, 1.5vw, 0.75rem);
-        font-size: clamp(0.45rem, 1.8vw, 0.55rem);
-    }
-    
-    .logiciels-grid {
-        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-        gap: clamp(0.75rem, 2vw, 1rem);
-    }
-    
-    .logiciel-icon {
-        min-height: clamp(60px, 12vw, 80px);
-    }
-    
-    .logiciel-icon img {
-        width: clamp(45px, 10vw, 70px);
-        height: clamp(45px, 10vw, 70px);
-    }
-    
-    .logiciel-card h3 {
-        font-size: clamp(0.6rem, 1.8vw, 0.75rem);
-    }
-    
-    .projet-item {
-        gap: clamp(1rem, 2vw, 1.5rem);
-        padding: clamp(1rem, 2vw, 1.5rem);
-    }
-    
-    .projets-intro {
-        font-size: clamp(0.8rem, 2.2vw, 0.9rem);
-        margin-bottom: clamp(1.5rem, 4vw, 2rem);
-    }
-    
-    .projets-detailles-container h1 {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        margin-bottom: clamp(0.75rem, 2vw, 1rem);
-    }
-    
-    .apropos-content h1 {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        margin-bottom: clamp(0.75rem, 2vw, 1rem);
-    }
-    
-    .apropos-content p {
-        font-size: clamp(0.8rem, 2.2vw, 0.85rem);
-    }
-    
-    .logiciels-section h2 {
-        font-size: clamp(1.3rem, 4vw, 1.6rem);
-        margin-bottom: clamp(1rem, 3vw, 1.5rem);
-    }
-    
-    .galerie-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .header-detail {
-        gap: clamp(0.5rem, 2vw, 1rem);
-        padding: clamp(1rem, 3vw, 1.5rem) clamp(1rem, 4vw, 1.5rem);
-    }
-    
-    .back-arrow {
-        font-size: clamp(1rem, 4vw, 1.5rem);
-    }
-    
-    .projet-logo img {
-        max-height: clamp(40px, 6vw, 50px);
-    }
-}
-
-/* ========================================
-   RESPONSIVE - PETITS TÉLÉPHONES
-   ======================================== */
-
-@media (max-width: 480px) {
-    html {
-        font-size: clamp(13px, 1.3vw, 14px);
-    }
-    
-    .header,
-    .header-detail,
-    .projets-page,
-    .projet-detail,
-    .apropos-page,
-    .projets-detailles-page,
-    .logiciels-section {
-        padding-left: clamp(0.75rem, 3vw, 1rem);
-        padding-right: clamp(0.75rem, 3vw, 1rem);
-    }
-    
-    .hero {
-        padding: clamp(0.75rem, 3vw, 1rem);
-        min-height: 90vh;
-    }
-    
-    .hero-content {
-        min-height: auto;
-        padding: clamp(1rem, 3vw, 1.5rem);
-    }
-    
-    .hero-subtitle {
-        font-size: clamp(0.55rem, 1.8vw, 0.65rem);
-        margin-bottom: 0.75rem;
-    }
-    
-    .hero-name .first-name {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        letter-spacing: 0.15em;
-    }
-    
-    .hero-name .last-name {
-        font-size: clamp(1.8rem, 5vw, 2.5rem);
-        letter-spacing: 0.12em;
-    }
-    
-    .fleur-decoration {
-        width: clamp(40px, 12vw, 60px);
-        margin-bottom: 1rem;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
     .btn-projets {
-        padding: clamp(0.45rem, 1.5vw, 0.55rem) clamp(1rem, 3vw, 1.2rem);
-        font-size: clamp(0.5rem, 1.6vw, 0.6rem);
+        position: static;
+        margin-top: 2rem;
     }
     
-    .nav {
-        gap: clamp(0.35rem, 1.5vw, 0.75rem);
-    }
-    
-    .nav a {
-        font-size: clamp(0.5rem, 1.8vw, 0.6rem);
-    }
-    
-    .projets-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: clamp(0.5rem, 2vw, 0.75rem);
-        max-width: 100%;
-    }
-    
-    .projet-image {
-        padding: clamp(0.5rem, 1.5vw, 0.75rem);
-        margin-bottom: clamp(0.25rem, 1vw, 0.35rem);
-    }
-    
-    .projet-label {
-        padding: clamp(0.35rem, 1.2vw, 0.45rem) clamp(0.5rem, 1vw, 0.6rem);
-        font-size: clamp(0.4rem, 1.5vw, 0.5rem);
-    }
-    
-    .logiciels-grid {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        gap: clamp(0.5rem, 1.5vw, 0.75rem);
-    }
-    
-    .logiciel-icon {
-        min-height: clamp(50px, 10vw, 70px);
-    }
-    
-    .logiciel-icon img {
-        width: clamp(40px, 8vw, 60px);
-        height: clamp(40px, 8vw, 60px);
-    }
-    
-    .logiciel-card h3 {
-        font-size: clamp(0.55rem, 1.5vw, 0.65rem);
-    }
-    
-    .projet-item {
-        gap: clamp(0.75rem, 1.5vw, 1rem);
-        padding: clamp(0.75rem, 1.5vw, 1rem);
-    }
-    
-    .projet-item-image {
-        max-height: 200px;
-    }
-    
-    .projet-item-content h3 {
-        font-size: clamp(1.2rem, 3vw, 1.4rem);
-        margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
-    }
-    
-    .projet-item-content p {
-        font-size: clamp(0.75rem, 2vw, 0.8rem);
-    }
-    
-    .projets-intro {
-        font-size: clamp(0.75rem, 2vw, 0.8rem);
-        margin-bottom: clamp(1rem, 3vw, 1.5rem);
-    }
-    
-    .projets-detailles-container h1 {
-        font-size: clamp(1.3rem, 3.5vw, 1.6rem);
-        margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
-    }
-    
-    .apropos-container {
-        gap: clamp(1rem, 2vw, 1.5rem);
-    }
-    
-    .apropos-content h1 {
-        font-size: clamp(1.3rem, 3.5vw, 1.6rem);
-        margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
-    }
-    
-    .apropos-content p {
-        font-size: clamp(0.75rem, 2vw, 0.8rem);
-        margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
-    }
-    
-    .logiciels-section h2 {
-        font-size: clamp(1.1rem, 3.5vw, 1.4rem);
-        margin-bottom: clamp(0.75rem, 2vw, 1rem);
-    }
-    
-    .photo-frame {
-        padding: clamp(0.75rem, 2vw, 1rem);
-    }
-    
-    .fleur-overlay {
-        width: clamp(35px, 8vw, 50px);
-    }
-    
-    .galerie-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .header-detail {
-        gap: clamp(0.5rem, 1.5vw, 0.75rem);
-        padding: clamp(0.75rem, 2vw, 1rem) clamp(0.75rem, 3vw, 1rem);
-    }
-    
-    .projet-logo img {
-        max-height: clamp(35px, 5vw, 45px);
+    .fleur-decoration {
+        width: 100px;
+        top: -40px;
+        right: -40px;
     }
 }
 
