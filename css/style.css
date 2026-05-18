@@ -66,12 +66,17 @@ img {
     width: min(100%, 1100px);
     min-height: 520px;
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Texte PORTFOLIO DE */
 .hero-subtitle {
     position: absolute;
     left: 7%;
-    top: 48%;
+    top: 35%;
     font-family: var(--font-sans);
     font-size: 0.875rem;
     letter-spacing: 0.4em;
@@ -85,7 +90,7 @@ img {
 .hero-name {
     position: absolute;
     left: 7%;
-    top: 55%;
+    top: 42%;
     font-family: var(--font-serif);
     line-height: 1.05;
     margin: 0;
@@ -127,7 +132,9 @@ img {
     position: absolute;
     right: 13%;
     bottom: 20%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.65rem 2.3rem;
     border: 3px solid #000;
     border-radius: 30px;
@@ -668,14 +675,18 @@ img {
     }
     
     .btn-projets {
-        position: static;
-        margin-top: 2rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25%;
     }
     
     .fleur-decoration {
-        width: 100px;
-        top: -40px;
-        right: -40px;
+        width: 80px;
+        top: 15%;
+        right: 5%;
+        left: auto;
+        pointer-events: none;
     }
 }
 
