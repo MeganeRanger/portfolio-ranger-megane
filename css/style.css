@@ -349,9 +349,10 @@ img {
 .photo-frame {
     position: relative;
     background: var(--color-beige);
+   
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 8px 8px 0 var(--color-brown);
+    box-shadow: 8px 8px 10px var(--color-brown);
 }
 
 .photo-frame img {
