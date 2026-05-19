@@ -145,12 +145,12 @@ img {
     color: #000;
     opacity: 0;
     animation: buttonReveal 0.9s ease-out 1s forwards;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 .btn-projets:hover {
     background: #000;
     color: var(--color-cream);
-    transform: translateY(-3px);
+    transform: scale(1.1);
 }
 /* ========================================
    HEADER & NAVIGATION
@@ -199,6 +199,7 @@ img {
 
 .projets-page {
     padding: 2rem 3rem 4rem;
+    overflow: visible;
 }
 
 .projets-grid {
@@ -207,16 +208,24 @@ img {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    overflow: visible;
 }
 
 .projet-card {
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    will-change: transform;
+    opacity: 0;
+    animation: cardReveal 0.9s ease-out forwards;
 }
 
-.projet-card:not(.empty):hover {
-    transform: translateY(-5px);
+.projet-card:not(.empty) .projet-image {
+     transition: transform 2s ease-in, box-shadow 2s ease;
+}
+
+.projet-card:not(.empty):hover .projet-image {
+    transform: scale(1.1);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.428);
 }
 
 .projet-image {
@@ -228,7 +237,9 @@ img {
     justify-content: center;
     padding: 1.5rem;
     margin-bottom: 0.75rem;
+    transition: transform 0.5s ease, box-shadow 0.4s ease;
 }
+
 
 .projet-image img {
     max-width: 80%;
@@ -812,11 +823,6 @@ img {
     animation: pageFadeIn 0.9s ease-out 0.25s forwards;
 }
 
-.projet-card {
-    opacity: 0;
-    animation: cardReveal 0.9s ease-out forwards;
-}
-
 .projet-card:nth-child(1) {
     animation-delay: 0.25s;
 }
@@ -850,22 +856,6 @@ img {
 }
 
 /* Garde l'effet hover des cartes après l'animation reveal */
-
-.projet-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projet-card:not(.empty):hover {
-    transform: translateY(-8px) scale(1.03);
-}
-
-.projet-card:not(.empty):hover .projet-image {
-    box-shadow: 0 12px 28px rgba(61, 46, 37, 0.25);
-}
-
-.projet-card:not(.empty):hover .projet-label {
-    background: #000;
-}
 
 .projet-image {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
